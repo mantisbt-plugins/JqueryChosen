@@ -27,9 +27,14 @@ class JqueryChosenPlugin extends MantisPlugin {
 	 * Create the resource link to load the jQuery library.
 	 */
 	function resources( $p_event ) {
-		 return  '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'chosen.css') . '" />' .
-				'<script type="text/javascript" src="' . plugin_file( 'chosenmin.js' ) . '"></script>'.
-				'<script type="text/javascript" src="' . plugin_file( 'chosen.js' ) . '"></script>';
+		$resources = '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'chosen.css') . '" />' .
+					 '<script type="text/javascript" src="' . plugin_file( 'chosenmin.js' ) . '"></script>'.
+					 '<script type="text/javascript" src="' . plugin_file( 'chosen.js' ) . '"></script>'.
+					 '<script> '.
+					 'var SELECTION_ONE_OPTION = "'.plugin_lang_get("selectionOneOption").'";'. 
+					 'var NO_RESULTS = "'.plugin_lang_get("noResults").'";'. 
+					 '</script>';
+		return  $resources;
 	}
 }
 
