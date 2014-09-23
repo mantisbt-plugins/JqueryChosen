@@ -11,8 +11,8 @@ specific language governing permissions and limitations under the License.
 */
 
 jQuery(function($){
-	$("select").attr("data-placeholder","Selecione uma opcao").chosen({
-		no_results_text: 'Nenhum registro encontrado!',
+	$("select").attr("data-placeholder",SELECTION_ONE_OPTION).chosen({
+		no_results_text: NO_RESULTS,
 		allow_single_deselect:true
 	});
 });
