@@ -2,5 +2,5 @@
 
 # Licensed under the MIT license
 
-$s_plugin_MantisChosen_selectionOneOption = 'Selecione uma opção';
-$s_plugin_MantisChosen_noResults = 'Nenhum resultado encontrado!';
+$s_plugin_JqueryChosen_selectionOneOption = 'Selecione uma opção';
+$s_plugin_JqueryChosen_noResults = 'Nenhum resultado encontrado!';
