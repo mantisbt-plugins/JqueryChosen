@@ -1,0 +1,7 @@
+<?php
+
+# Licensed under the MIT license
+# Autor: Roman Allenstein <http://roman-allenstein.de>
+
+$s_plugin_JqueryChosen_selectionOneOption = 'Bitte auswählen';
+$s_plugin_JqueryChosen_noResults = 'Keine Treffer!';
