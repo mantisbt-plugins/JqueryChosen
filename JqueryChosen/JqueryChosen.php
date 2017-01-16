@@ -7,10 +7,13 @@ class JqueryChosenPlugin extends MantisPlugin {
 		$this->description = 'Applies the Chosen jQuery plugin on all html selects';
 
 		$this->version = '0.2';
-		$this->requires = array(
-			'MantisCore' => '1.2.0',
-			'jQuery' => '1.9.1',
-		);
+		$this->requires['MantisCore'] = '1.2.0, < 1.4';
+		// if it is mantis 1.2, require jQuery.
+		// 1.3 has jQuery bundled.
+		if (substr(MANTIS_VERSION, 0, 3) == "1.2")
+		{
+			$this->requires['jQuery'] = '1.9.1, < 1.12';
+		}	
 
 		$this->author	= 'Kiver Vinicius';
 		$this->contact	= 'kivervinicius@gmail.com';
