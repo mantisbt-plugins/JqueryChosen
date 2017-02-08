@@ -1,0 +1,6 @@
+<?php
+
+# Licensed under the MIT license
+
+$s_plugin_JqueryChosen_selectionOneOption = 'Selecteer en optie.';
+$s_plugin_JqueryChosen_noResults = 'Geen resultaten';

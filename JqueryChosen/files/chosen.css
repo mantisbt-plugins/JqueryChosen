@@ -76,7 +76,6 @@
     display: block;
     width: 12px;
     height: 12px;
-    background: url(plugin_file.php?file=JqueryChosen/chosen-sprite.png) -42px 1px no-repeat;
     font-size: 1px
 }
 
@@ -423,6 +422,14 @@
     }
 }
 
+.input-xs {
+    display: inherit !important;
+}
+
 #project_menu_search {
     height: 45px;
+}
+
+.table-responsive {
+    overflow-x: inherit;
 }
