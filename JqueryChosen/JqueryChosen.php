@@ -31,7 +31,6 @@ class JqueryChosenPlugin extends MantisPlugin
     function resources($p_event)
     {
         $resources = '<link rel="stylesheet" type="text/css" href="' . plugin_file('chosen.css') . '" />' .
-            '<script type="text/javascript" src="' . plugin_file('list.min.js') . '"></script>' .
             '<script type="text/javascript" src="' . plugin_file('chosenmin.js') . '"></script>' .
             '<script type="text/javascript" src="' . plugin_file('chosen.js') . '"></script>' .
             '<script> ' .
