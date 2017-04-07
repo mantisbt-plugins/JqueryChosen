@@ -433,3 +433,16 @@
 .table-responsive {
     overflow-x: inherit;
 }
+
+.chosen-plugin-auto-hide {
+    display: none !important;
+}
+
+/* overwrite auto-scroll of resposive-table in mantis. could get ugly on mobile devices */
+.table-responsive {
+    overflow-x: visible;
+}
+
+.chosen-container.chosen-container-single[style="width: 0px;"] {
+    width: 185px !important;
+}
