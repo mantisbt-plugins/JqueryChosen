@@ -70,13 +70,14 @@
 }
 
 .chosen-container-single .chosen-single abbr {
+    background: rgba(0, 0, 0, 0) url(plugin_file.php?file=JqueryChosen/chosen-sprite.png) no-repeat scroll -42px 1px;
     position: absolute;
     top: 6px;
     right: 26px;
     display: block;
     width: 12px;
     height: 12px;
-    font-size: 1px
+    font-size: 1px;
 }
 
 .chosen-container-single .chosen-single abbr:hover {
@@ -417,7 +418,7 @@
     .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
     .chosen-container .chosen-results-scroll-down span,
     .chosen-container .chosen-results-scroll-up span {
-        background-image: url(chosen-sprite@2x.png) !important;
+        background-image: url(chosen-sprite.png) !important;
         background-size: 52px 37px !important;
         background-repeat: no-repeat !important
     }
