@@ -78,6 +78,7 @@
     width: 12px;
     height: 12px;
     font-size: 1px;
+    background: url(plugin_file.php?file=JqueryChosen/chosen-sprite.png) no-repeat -42px 1px
 }
 
 .chosen-container-single .chosen-single abbr:hover {
