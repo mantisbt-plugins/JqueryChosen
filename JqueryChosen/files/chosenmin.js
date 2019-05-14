@@ -150,7 +150,7 @@
 				return a.results_search()
 			}, 50)
 		}, AbstractChosen.prototype.container_width = function () {
-			return null != this.options.width ? this.options.width : "" + (this.form_field.offsetWidth + 60) + "px"
+			return (this.options.width ? this.options.width : "" + (this.form_field.offsetWidth + 60)) + "px"
 		}, AbstractChosen.prototype.include_option_in_results = function (a) {
 			return this.is_multiple && !this.display_selected_options && a.selected ? !1 : !this.display_disabled_options && a.disabled ? !1 : a.empty ? !1 : !0
 		}, AbstractChosen.prototype.search_results_touchstart = function (a) {

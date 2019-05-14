@@ -11,9 +11,24 @@ specific language governing permissions and limitations under the License.
 */
 
 jQuery(function($){
-	$("select").attr("data-placeholder",SELECTION_ONE_OPTION).chosen({
-		no_results_text: NO_RESULTS,
-		allow_single_deselect:true
-	}).addClass("chosen-plugin-auto-hide");
+	$("select").each(function() {
+
+		var element_width = this.offsetWidth;
+
+		// calculate width of elements that are not visible
+		if(!$(this).is(":visible")) {
+			var clone = $(this).clone();
+			clone.css("visibility","hidden");
+			$('body').append(clone);
+			element_width = clone.outerWidth();
+			clone.remove();
+		}
+
+		$(this).attr("data-placeholder", SELECTION_ONE_OPTION).chosen({
+			no_results_text: NO_RESULTS,
+			allow_single_deselect: true,
+			width: element_width + 60
+		}).addClass("chosen-plugin-auto-hide");
+
+	});
 });
- 

@@ -29,7 +29,8 @@ class JqueryChosenPlugin extends MantisPlugin {
 		$resources = '<link rel="stylesheet" type="text/css" href="' . plugin_file( 'chosen.css') . '" />' .
 					'<script type="text/javascript" src="' . plugin_page( 'chosen_js_params' ) . '"></script> '.
 					'<script type="text/javascript" src="' . plugin_file( 'chosenmin.js' ) . '"></script> '.
-					'<script type="text/javascript" src="' . plugin_file( 'chosen.js' ) . '"></script> ';
+					'<script type="text/javascript" src="' . plugin_file( 'chosen.js' ) . '"></script> '.
+					'<script type="text/javascript" src="' . plugin_file( 'chosen_html_validation_fix.js' ) . '"></script> ';
 		return  $resources;
 	}
 }
